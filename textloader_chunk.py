@@ -1,4 +1,4 @@
-file = open ("vmware_sop.txt" , "r" , encoding ="utf-8")
+file = open ("sample.txt" , "r" , encoding ="utf-8")
 contents = file.read()
 file.close()
 
@@ -16,4 +16,5 @@ for i in range(0, len(contents), chunk_size):
 for i, chunk in enumerate(chunks)  :
     print(f"Chunk {i+1} :")
     print(chunk)
+
 
